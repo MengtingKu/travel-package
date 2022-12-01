@@ -1,0 +1,236 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+html,
+body {
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Microsoft JhengHei";
+}
+
+.addTicket-panel {
+  margin: 120px auto 100px;
+  max-width: 920px;
+}
+@media (max-width: 768px) {
+  .addTicket-panel {
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+.addTicket-panel .logoimg,
+.addTicket-panel .addTicket-form {
+  width: 45%;
+}
+@media (max-width: 768px) {
+  .addTicket-panel .logoimg,
+.addTicket-panel .addTicket-form {
+    margin: 0 auto;
+    width: 95%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@media (max-width: 568px) {
+  .addTicket-panel .logoimg img:nth-child(2),
+.addTicket-panel .addTicket-form img:nth-child(2) {
+    display: none;
+  }
+}
+.addTicket-panel .logoimg img {
+  margin: 0 auto 21px;
+}
+.addTicket-panel .addTicket-form h1 {
+  color: #00807E;
+  border-bottom: 3px solid #00807E;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.addTicket-panel .addTicket-form label {
+  color: #00807E;
+  font-weight: bold;
+}
+.addTicket-panel .addTicket-form input,
+.addTicket-panel .addTicket-form textarea,
+.addTicket-panel .addTicket-form select {
+  background-color: #F7F7F7;
+  border: none;
+  color: #818A91;
+  border-bottom: 1px solid #00807E;
+  border-radius: initial;
+}
+.addTicket-panel .addTicket-form .btn-success {
+  background-color: #00807E;
+  width: 45%;
+}
+.addTicket-panel .addTicket-form .btn-success:hover {
+  background-color: #64C3BF;
+  border: #64C3BF;
+  -webkit-box-shadow: 0 3px 6px #818A91;
+          box-shadow: 0 3px 6px #818A91;
+}
+
+.addContent {
+  background-color: #F7F7F7;
+  color: #818A91;
+}
+.addContent .search-area {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.addContent .regionSearch {
+  max-width: 30%;
+  color: #818A91;
+}
+@media (max-width: 768px) {
+  .addContent .regionSearch {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}
+.addContent #searchResult-text {
+  margin: 8px 10px;
+}
+@media (max-width: 768px) {
+  .addContent #searchResult-text {
+    margin: 8px 0;
+    text-align: center;
+  }
+}
+.addContent .ticketCard-area {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+@media (max-width: 768px) {
+  .addContent .ticketCard-area {
+    padding: 0 2%;
+  }
+}
+.addContent .ticketCard-area .ticketCard {
+  width: 31.33333%;
+  margin: 1%;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .addContent .ticketCard-area .ticketCard {
+    width: 48%;
+  }
+}
+@media (max-width: 568px) {
+  .addContent .ticketCard-area .ticketCard {
+    width: 98%;
+  }
+}
+.addContent .ticketCard-area .ticketCard-img {
+  position: relative;
+}
+@media (max-width: 568px) {
+  .addContent .ticketCard-area .ticketCard-img {
+    height: 291px;
+  }
+}
+.addContent .ticketCard-area .ticketCard-img a {
+  overflow: hidden;
+}
+.addContent .ticketCard-area .ticketCard-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 180px;
+}
+.addContent .ticketCard-area .ticketCard-img img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+.addContent .ticketCard-area .ticketCard-region,
+.addContent .ticketCard-area .ticketCard-rank {
+  border-radius: 0 5px 5px 0px;
+  color: #FAFAFA;
+  text-align: center;
+}
+.addContent .ticketCard-area .ticketCard-region {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  background-color: #64C3BF;
+  padding: 2% 3%;
+  font-size: large;
+  width: 25%;
+}
+.addContent .ticketCard-area .ticketCard-rank {
+  position: absolute;
+  left: 0;
+  top: 90%;
+  width: 15%;
+  padding: 1.5%;
+  background-color: #00807E;
+  font-size: small;
+}
+.addContent .ticketCard-area .ticketCard-name {
+  color: #00807E;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1%;
+  border-bottom: 2px solid #00807E;
+}
+.addContent .ticketCard-area .ticketCard-name:hover {
+  color: #64C3BF;
+}
+.addContent .ticketCard-area .ticketCard-info {
+  color: #00807E;
+}
+.addContent .ticketCard-area .ticketCard-info .ticketCard-num {
+  font-weight: bold;
+}
+.addContent .ticketCard-area .ticketCard-info .ticketCard-price span:nth-child(2) {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.addContent .ticketCard {
+  display: block;
+}
+.addContent .cantFind-area h3 {
+  text-align: center;
+  color: #00807E;
+  font-weight: bolder;
+}
+.addContent .cantFind-area img {
+  margin: 3% auto;
+}
+
+.active {
+  display: none;
+}
+
+.active1 {
+  display: block;
+}/*# sourceMappingURL=221028-allDIY.css.map */

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1" />
+	<title>Form 表單設計與驗證</title>
+	<style type="text/css">
+	form{
+		line-height:2em; /* 2被行寬 */
+	}
+	form>input, form>select{
+		padding:5px 10px; /* 上下, 左右 */
+		border:1px solid #888888; /* 加邊框 */
+		border-radius:5px; /* 導圓角 */
+		
+	}
+	form>.ok{
+		color:#008800;
+	}
+	form>input:valid+.ok{
+		display:inline;
+	}
+	form>input:invalid+.ok{
+		display:none;
+	}
+	
+	</style>
+	
+</head>
+<body>
+<!-- required : 必填,會自動驗證 -->
+<!-- pattern="正規表示式 Regular Expression : 限制填寫規則 -->
+<!-- placeholder : 提醒用 -->
+
+	<h3>註冊帳號</h3>
+	<form onsubmit="alert('表單送出');">
+		帳號 : <input type="text" required placeholder="4~12 英數字" pattern="[0-9a-zA-z]{4,12}" />
+			<span class="ok">ok</span>
+			<br/>
+		密碼 : <input type="password" required pattern="[0-9a-zA-z]{8,12}"/>
+			<span class="ok">ok</span>
+			<br/>
+		電郵 : <input type="email" required pattern="[0-9]{8,10}"/>
+			<span class="ok">ok</span>
+			<br/>
+		電話 : <input type="text" pattern="[0-9]{8,10}/><br/>
+		性別 :
+			男 <input type="radio" name="gender" value="male" required/>
+			女 <input type="radio" name="gender" value="female" required/><br/>
+		生日 : <select required>
+			<option value="">出生年</option>
+			<option value="1999">1999</option>
+			<option value="1998">1998</option>
+		</select></br></br>
+		<input type="submit" value="送出資料" />
+			
+	</form>
+
+</body>
+</html>
